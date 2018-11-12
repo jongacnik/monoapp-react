@@ -6,9 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "monoapp",
+    "react"
+  ],
+  "author": "Jon Gacnik <jon@folderstudio.com>",
+  "repository": "jongacnik/monoapp-react",
+  "license": "MIT",
   "dependencies": {
     "react": "^16.6.1",
     "react-dom": "^16.6.1"
