@@ -1,7 +1,7 @@
 var React = require('react')
 var monoapp = require('monoapp')
 var withReact = require('..')
-var Component = require('../component')
+var { Component } = require('..')
 
 var app = monoapp()
 

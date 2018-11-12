@@ -32,7 +32,7 @@ function view (state, emit) {
 An instance of `React.Component` extended with `monoapp` state and emit is included:
 
 ```js
-var Component = require('monoapp-react/component')
+var { Component } = require('monoapp-react')
 
 class MyComponent extends Component {
   render () {
