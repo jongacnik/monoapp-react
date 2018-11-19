@@ -1,7 +1,7 @@
 var React = require('react')
 var ReactDOM = require('react-dom')
 
-class Component extends React.Component {}
+Component.prototype = Object.create(React.Component.prototype)
 
 function withReact (state, emitter, app) {
   app._mount = (tree, newTree) => ReactDOM.render(newTree, tree)
@@ -10,6 +10,10 @@ function withReact (state, emitter, app) {
   Component.prototype.emit = function () {
     emitter.emit.apply(emitter, arguments)
   }
+}
+
+function Component (props) {
+  React.Component.call(this, props)
 }
 
 module.exports = withReact
